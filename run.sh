@@ -1,6 +1,6 @@
 #!/bin/bash
 # remove artefacts from previous runs that might stop startup
-rm -rf /root/.config/pulse/* || true
+rm -rf /root/.config/pulse/* /tmp/* /tmp/.* || true
 
 # start fresh pulseaudio server with virtual output device
 pulseaudio -D --exit-idle-time=-1
